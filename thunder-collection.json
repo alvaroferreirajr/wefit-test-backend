@@ -1,0 +1,57 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "teste-backend",
+    "collectionId": "f28b463a-31f0-4f6c-87e1-06a13ad3b823",
+    "dateExported": "2024-11-06T20:15:00.909Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "de3a6950-e746-43c6-ae5f-68572ffec200",
+            "colId": "f28b463a-31f0-4f6c-87e1-06a13ad3b823",
+            "containerId": "",
+            "name": "Ping",
+            "url": "http://localhost:3000/ping",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2024-11-06T14:42:31.050Z",
+            "modified": "2024-11-06T14:43:41.122Z",
+            "headers": []
+        },
+        {
+            "_id": "c64981ce-c5db-4d2a-adea-66a3e9ec044c",
+            "colId": "f28b463a-31f0-4f6c-87e1-06a13ad3b823",
+            "containerId": "",
+            "name": "profiles/getAll",
+            "url": "http://localhost:3000/profiles",
+            "method": "GET",
+            "sortNum": 17500,
+            "created": "2024-11-06T14:42:07.416Z",
+            "modified": "2024-11-06T14:42:59.213Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Álvaro\",\n  \"email\": \"alvarojfjunior@gmail.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "4c76b2cf-929c-40f2-acad-9edcca04bd07",
+            "colId": "f28b463a-31f0-4f6c-87e1-06a13ad3b823",
+            "containerId": "",
+            "name": "profiles/create",
+            "url": "http://localhost:3000/profiles",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-11-06T14:42:15.090Z",
+            "modified": "2024-11-06T20:14:08.911Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"type\": \"Legal Entity\",\n  \"document\": \"12345678000195\", // CNPJ com 14 dígitos\n  \"documentResponsible\": \"12345678901\", // CPF com 11 dígitos\n  \"name\": \"Empresa de Teste LTDA\",\n  \"mobile\": \"+5511998765432\", // Número de celular no formato brasileiro\n  \"phone\": \"+551133445566\", // Número de telefone no formato brasileiro\n  \"email\": \"teste@empresa.com\",\n  \"emailConfirm\": \"teste@empresa.com\",\n  \"zipCode\": \"12345-678\", // CEP no formato brasileiro\n  \"street\": \"Rua de Exemplo\",\n  \"number\": \"123\",\n  \"complement\": \"Sala 456\",\n  \"city\": \"São Paulo\",\n  \"neighborhood\": \"Centro\",\n  \"state\": \"SP\",\n  \"termsAccepted\": true\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "jQDEzcWAl2B8OHloB2j-0LreGsK5xxJx1qRsC4jh4W7NGLj4wHmwEU_1iUl8cRpmCknv7AfmVNexige073vB0A"
+}
