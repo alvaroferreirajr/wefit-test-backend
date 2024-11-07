@@ -2,7 +2,7 @@ import { Body, Controller, Delete, Get, HttpCode, HttpStatus, Param, Post, Put, 
 import { ApiTags } from '@nestjs/swagger';
 import { ProfilesService } from "./profiles.service";
 import { ProfileDto } from "./dtos/profile.dto";
-import { AuthGuard } from "src/auth/auth.guard";
+import { AuthGuard } from "../auth/auth.guard";
 
 @ApiTags('profiles')
 @Controller('profiles')
@@ -32,23 +32,23 @@ export class ProfilesController {
 
   @Post()
   @HttpCode(HttpStatus.CREATED)
-  async createProfile(@Body() ProfileDto: ProfileDto) {
+  async create(@Body() ProfileDto: ProfileDto) {
     return this.profilesService.create(ProfileDto);
   }
 
   @Get(':id')
-  async getProfileById(@Param('id') id: number) {
+  async getById(@Param('id') id: number) {
     return this.profilesService.getById(Number(id));
   }
 
   @Put(':id')
-  async updateProfile(@Param('id') id: number, @Body() updateProfileDto: Partial<ProfileDto>) {
+  async update(@Param('id') id: number, @Body() updateProfileDto: Partial<ProfileDto>) {
     return this.profilesService.update(Number(id), updateProfileDto);
   }
 
   @Delete(':id')
   @HttpCode(HttpStatus.NO_CONTENT)
-  async deleteProfile(@Param('id') id: number) {
+  async delete(@Param('id') id: number) {
     await this.profilesService.delete(Number(id));
   }
 }
