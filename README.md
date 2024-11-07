@@ -33,6 +33,6 @@ $ npm run start:prod
 $ npm run test
 ```
 
-## Uls
+## Urls
 - API: `http://localhost:3000`
 - Swagger: `http://localhost:3000/api`
